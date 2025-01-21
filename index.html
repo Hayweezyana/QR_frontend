@@ -12,7 +12,7 @@
   <script>
     async function fetchColor() {
       try {
-        const response = await fetch("https://qr-server-uxza.onrender.com");
+        const response = await fetch("https://qr-server-uxza.onrender.com:3000");
         const data = await response.json();
         const colorElement = document.getElementById("box");
         colorElement.textContent = data.color;
